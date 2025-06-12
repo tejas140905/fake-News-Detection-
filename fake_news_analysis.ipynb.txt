@@ -1,0 +1,139 @@
+{
+
+"cells": [
+
+{
+
+"cell_type": "code",
+
+"execution_count": 1,
+
+"metadata": {},
+
+"outputs": [],
+
+"source": [
+
+"import pandas as pd\n",
+
+"import matplotlib.pyplot as plt\n",
+
+"import seaborn as sns\n",
+
+"\n",
+
+"# Load the dataset\n",
+
+"df = pd.read_csv('data/fake_news_data.csv')\n",
+
+"\n",
+
+"# Display basic info\n",
+
+"df.info()\n",
+
+"\n",
+
+"# Show first few records\n",
+
+"df.head()"
+
+]
+
+},
+
+{
+
+"cell_type": "code",
+
+"execution_count": 2,
+
+"metadata": {},
+
+"outputs": [
+
+{
+
+"name": "stdout",
+
+"output_type": "stream",
+
+"text": [
+
+" \n",
+
+" Unnamed: 0 text label\n",
+
+"0 0 News article 1 real\n",
+
+"1 1 News article 2 fake\n",
+
+"2 2 News article 3 real\n",
+
+"3 3 News article 4 fake\n",
+
+"4 4 News article 5 real\n"
+
+]
+
+}
+
+],
+
+"source": [
+
+"# Plot the distribution of labels\n",
+
+"sns.countplot(x='label', data=df)\n",
+
+"plt.title('Fake vs Real News')\n",
+
+"plt.show()"
+
+]
+
+}
+
+],
+
+"metadata": {
+
+"kernelspec": {
+
+"display_name": "Python 3",
+
+"language": "python",
+
+"name": "python3"
+
+},
+
+"language_info": {
+
+"codemirror_mode": {
+
+"name": "ipython",
+
+"version": 3
+
+},
+
+"file_extension": ".py",
+
+"mimetype": "text/x-python",
+
+"name": "python",
+
+"nbconvert_exporter": "python",
+
+"version": "3.9.7"
+
+}
+
+},
+
+"nbformat": 4,
+
+"nbformat_minor": 5
+
+}
